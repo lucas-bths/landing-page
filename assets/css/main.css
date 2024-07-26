@@ -3510,3 +3510,33 @@ input, select, textarea {
 			}
 
 	}
+
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.project-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust width as needed */
+    scroll-snap-align: start;
+    border: 1px solid #ddd; /* Optional: Add border for better visibility */
+    padding: 1rem;
+    background: #fff; /* Optional: Add background color */
+}
+
+.projects-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+}
+
+/* Optional: Customize the appearance of the project items */
+.project-item .image.fit {
+    margin-bottom: 1rem;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
